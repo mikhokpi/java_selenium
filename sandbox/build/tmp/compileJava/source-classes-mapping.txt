@@ -1,2 +1,2 @@
-ru/stqa/pft/sandbox/helloWorld.java
- ru.stqa.pft.sandbox.helloWorld
+ru/stqa/pft/sandbox/HelloWorld.java
+ ru.stqa.pft.sandbox.HelloWorld
