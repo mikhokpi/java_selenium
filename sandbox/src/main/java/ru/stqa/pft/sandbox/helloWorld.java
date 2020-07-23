@@ -2,23 +2,23 @@ package ru.stqa.pft.sandbox;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        hello("Vlad");
-        hello("user!");
-        double l = 5;
-        System.out.println("kvadrat = " + area(l));
-        double a = 4, b = 6;
-        System.out.println("pryamoygolnik = " + area(4,5));
+
+        Square s = new Square();
+        s.l = 5;
+        System.out.println("square = " + area(s));
+        Rectangle r = new Rectangle();
+        r.a = 2;
+        r.b = 3;
+        System.out.println("rectangle = " + area(r));
     }
 
-    public static void hello(String smb) {
-        System.out.println("Hello " + smb);
+    public static double area(Square s) {
+        return s.l * s.l;
     }
 
-    public static double area(double length) {
-        return length * length;
+    public static double area(Rectangle r) {
+        return r.a * r.b;
     }
 
-    public static double area(double a, double b) {
-        return a * b;
-    }
+
 }
